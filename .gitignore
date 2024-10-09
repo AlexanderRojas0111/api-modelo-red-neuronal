@@ -1,5 +1,6 @@
 # Model file
 CNN_BF_PY.h5
+ai-models/
 
 # FastAPI
 __pycache__/

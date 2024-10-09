@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-WORKDIR /bache-finder-ml-model
+WORKDIR /api_modelo_red_neuronal
 
 RUN apt-get update && \
     apt-get install -y \
@@ -21,7 +21,7 @@ EXPOSE 8000
 
 RUN addgroup --system pythongroup && \
     adduser --system --ingroup pythongroup pythonuser && \
-    chown -R pythonuser:pythongroup /bache-finder-ml-model
+    chown -R pythonuser:pythongroup /api_modelo_red_neuronal
 USER pythonuser
 
 CMD ["python", "main.py"]
